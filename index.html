@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bless Pack - Embalagens Seláveis de Qualidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('htps:/t/fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --primary: #D4AF37;
+            --secondary: #000000;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .logo {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo-icon {
+            width: 60px;
+            height: 60px;
+            position: relative;
+            margin-right: 15px;
+        }
+        
+        .logo-diamond {
+            width: 100%;
+            height: 100%;
+            background-color: var(--primary);
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+            position: relative;
+        }
+        
+        .logo-crown {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--secondary);
+            font-size: 24px;
+        }
+        
+        .logo-wheat {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--primary);
+            font-size: 28px;
+        }
+        
+        .wheat-left {
+            left: -15px;
+        }
+        
+        .wheat-right {
+            right: -15px;
+        }
+        
+        .hero {
+            background: url(https://starpackplasticos.com.br/wp-content/uploads/2019/08/09-selaveis.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #b38f2a;
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 4px;
+            background: var(--primary);
+            bottom: -10px;
+            left: 25%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="logo"> 
+                <div class="logo-icon">
+                    <a href="#home" class="text-black hover:text-yellow-600 font-medium"> 
+                    <img src="Logo Bless Pack.png" alt="Logo" width="54" height="54" class="d-inline-block align-text-top">
+                    
+                    </a>
+                    
+                    
+                </div>
+                <div>
+                    <a href="#home" class="text-black hover:text-yellow-600 font-medium">    <h1 class="text-2xl font-bold text-black">BLESS PACK</h1>
+                    <p class="text-xs text-gray-600">Embalagens Seláveis</p>
+                    </a>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-black hover:text-yellow-600 font-medium">Home</a>
+                <a href="2index.html" class="text-black hover:text-yellow-600 font-medium">Produtos</a>
+                <a href="#about" class="text-black hover:text-yellow-600 font-medium">Sobre Nós</a>
+                <a href="#contact" class="text-black hover:text-yellow-600 font-medium">Contato</a>
+            </nav>
+            
+            <div class="hidden md:block">
+                <a href="#contact" class="btn-primary px-6 py-2 rounded-full font-medium">Orçamento</a>
+            </div>
+            
+            <button class="md:hidden text-2xl text-black">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Seção -->
+    <section id="home" class="hero text-white py-20 md:py-32">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Embalagens Seláveis de Alta Qualidade</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Soluções personalizadas em embalagens para proteger e valorizar seus produtos</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#products" class="btn-primary px-8 py-3 rounded-full font-medium text-lg">Nossos Produtos</a>
+                <a href="#contact" class="bg-white text-black px-8 py-3 rounded-full font-medium text-lg hover:bg-gray-100">Fale Conosco</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de recursos -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Proteção Garantida</h3>
+                    <p class="text-gray-600">Nossas embalagens seláveis oferecem máxima proteção contra umidade, oxigênio e contaminantes.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-star text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Qualidade Premium</h3>
+                    <p class="text-gray-600">Materiais de primeira linha que garantem durabilidade e conservação dos seus produtos.</p>
+                </div>
+                
+                <div class="text-center p-6 rounded-lg">
+                    <div class="bg-yellow-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-truck text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Entrega Rápida</h3>
+                    <p class="text-gray-600">Produção ágil e entrega em todo o Brasil para atender suas necessidades com eficiência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produtos-->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Nossos Produtos</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://starpackplasticos.com.br/wp-content/uploads/2023/03/PP03B_SELAVEIS_STARPACK_EMBALAGENS_1344_896-1024x683.jpg" alt="Embalagem a Vácuo" class="h-full w-full object-cover">>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Stand-up Pouch</h3>
+                        <p class="text-gray-600 mb-4">Embalagem prática e moderna que se mantém em pé, ideal para diversos segmentos.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-yellow-600">A partir de R$ 1,20</span>
+                            <a href="#contact" class="btn-primary px-4 py-2 rounded-full text-sm">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://starpackplasticos.com.br/wp-content/uploads/2019/09/fundo-pp3.jpg" alt="Embalagem a Vácuo" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Embalagem a Vácuo</h3>
+                        <p class="text-gray-600 mb-4">Proteção máxima para alimentos e produtos sensíveis ao oxigênio.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-yellow-600">A partir de R$ 0,80</span>
+                            <a href="#contact" class="btn-primary px-4 py-2 rounded-full text-sm">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <div class="h-48 bg-gray-200 flex items-center justify-center">
+                        <img src="https://starpackplasticos.com.br/wp-content/uploads/2023/03/PP03A_SELAVEIS_STARPACK_EMBALAGENS_1344_896-1024x683.jpg" alt="Embalagem Ziplock" class="h-full w-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Ziplock</h3>
+                        <p class="text-gray-600 mb-4">Fechamento prático e seguro, ideal para produtos que necessitam de abertura e fechamento constantes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-yellow-600">A partir de R$ 0,60</span>
+                            <a href="#contact" class="btn-primary px-4 py-2 rounded-full text-sm">Solicitar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="2index.html" class="inline-block btn-primary px-8 py-3 rounded-full font-medium">Ver Todos os Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre seção -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://img.freepik.com/fotos-gratis/variedade-plana-de-alimentos-cozidos_23-2148765539.jpg" alt="Sobre a Bless Pack" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 section-title">Sobre a Bless Pack</h2>
+                    <p class="text-gray-600 mb-4">A Bless Pack é especializada na produção de embalagens seláveis de alta qualidade, oferecendo soluções personalizadas para diversos segmentos do mercado.</p>
+                    <p class="text-gray-600 mb-4">Com tecnologia avançada e materiais premium, garantimos que seus produtos cheguem aos consumidores com máxima proteção e apresentação.</p>
+                    <p class="text-gray-600 mb-6">Nossa missão é fornecer embalagens que não apenas protejam, mas também valorizem seus produtos, transmitindo confiança e qualidade.</p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
+                            <span>Matéria-prima de qualidade</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
+                            <span>Tecnologia avançada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-check-circle text-yellow-600 mr-2"></i>
+                            <span>Equipe especializada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- depoimentos -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">O que dizem nossos clientes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"As embalagens da Bless Pack superaram nossas expectativas. Qualidade excelente e entrega dentro do prazo."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Carolina</h4>
+                            <p class="text-sm text-gray-500">Indústria Alimentícia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Atendimento personalizado e embalagens que realmente protegem nossos produtos. Parceiros de confiança!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ricardo Almeida</h4>
+                            <p class="text-sm text-gray-500">Comércio de Cafés</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="text-yellow-500 mr-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Soluções criativas para nossas necessidades específicas. As embalagens ajudaram a valorizar nossa marca no mercado."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-300 mr-3 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Fernanda Oliveira</h4>
+                            <p class="text-sm text-gray-500">Produtos Naturais</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contatos -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 section-title">Entre em Contato</h2>
+                
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden">
+                    <div class="md:flex">
+                        <div class="md:w-1/2 bg-yellow-600 text-white p-8">
+                            <h3 class="text-2xl font-bold mb-6">Informações de Contato</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-bold">Endereço</h4>
+                                        <p>R. Cidade Ecológica, 879 - Bairro Edson Queiroz<br> Fortaleza - CE</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-bold">Telefone</h4>
+                                        <p>(85) 99130-3830</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-envelope mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-bold">Email</h4>
+                                        <p>contato@blesspack.com.br</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-clock mt-1 mr-3"></i>
+                                    <div>
+                                        <h4 class="font-bold">Horário de Atendimento</h4>
+                                        <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:w-1/2 p-8">
+                            <h3 class="text-2xl font-bold mb-6 text-black">Solicite um Orçamento</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nome</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                </div>
+                                <div>
+                                    <label for="product" class="block text-sm font-medium text-gray-700 mb-1">Produto de Interesse</label>
+                                    <select id="product" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
+                                        <option value="">Selecione um produto</option>
+                                        <option value="stand-up">Stand-up Pouch</option>
+                                        <option value="vacuo">Embalagem a Vácuo</option>
+                                        <option value="ziplock">Ziplock</option>
+                                        <option value="outro">Outro</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensagem</label>
+                                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"></textarea>
+                                </div>
+                                <button type="submit" class="w-full btn-primary py-3 rounded-md font-medium">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- perguntas frequentes-->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-12 section-title">Perguntas Frequentes</h2>
+            
+            <div class="space-y-4">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 text-left font-medium">
+                        <span>Qual o prazo de entrega?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-4 pb-4 hidden">
+                        <p class="text-gray-600">O prazo de entrega varia conforme a quantidade e complexidade do pedido. Em média, nossos prazos são de 7 a 15 dias úteis após a confirmação do pedido.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 text-left font-medium">
+                        <span>Vocês fazem embalagens personalizadas?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-4 pb-4 hidden">
+                        <p class="text-gray-600">Sim, oferecemos soluções personalizadas em termos de tamanho, material e impressão. Nossa equipe técnica pode auxiliar no desenvolvimento da embalagem ideal para seu produto.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 text-left font-medium">
+                        <span>Qual o mínimo para pedido?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-4 pb-4 hidden">
+                        <p class="text-gray-600">O pedido mínimo varia conforme o tipo de embalagem. Para produtos padrão, o mínimo é de 1.000 unidades. Para embalagens personalizadas, o mínimo pode ser maior.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <button class="w-full flex justify-between items-center p-4 text-left font-medium">
+                        <span>Quais formas de pagamento vocês aceitam?</span>
+                        <i class="fas fa-chevron-down transition-transform duration-300"></i>
+                    </button>
+                    <div class="px-4 pb-4 hidden">
+                        <p class="text-gray-600">Aceitamos diversas formas de pagamento: boleto bancário, cartão de crédito (em até 3x sem juros) e transferência bancária. Para pedidos acima de R$ 10.000,00, podemos oferecer condições especiais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Seção -->
+    <section class="py-16 bg-yellow-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Pronto para proteger e valorizar seus produtos?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Entre em contato agora mesmo e descubra a solução ideal para suas necessidades de embalagem.</p>
+            <a href="#contact" class="inline-block bg-black text-white px-8 py-3 rounded-full font-medium hover:bg-gray-800">Solicitar Orçamento</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="logo flex items-center mb-4">
+                        <div class="logo-icon">
+                            <a href="#home" class="text-black hover:text-yellow-600 font-medium"><img src="Logo Bless Pack.png" alt="home navbar-brand "></a>
+                            
+                            
+                            
+                        </div>
+                        <div>
+                            <a href="#home" class="text-white hover:text-yellow-600 font-medium"> <h1 class="text-xl font-bold" alt="home navbar-brand">BLESS PACK</h1> </a>
+                        </div>
+                    </div>
+                    <p class="text-gray-400">Especialistas em embalagens seláveis de alta qualidade para diversos segmentos do mercado.</p>
+                
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Produtos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Stand-up Pouch</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Embalagem a Vácuo</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Ziplock</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Embalagens Especiais</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Personalizadas</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Links Úteis</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white">Produtos</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">Sobre Nós</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contato</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contato</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                            <span>R. Cidade Ecológica, 879 - Bairro Edson Queiroz<br> Fortaleza - CE</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>(85) 99130-3830</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>contato@blesspack.com.br</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock mr-2"></i>
+                            <span>Seg-Sex: 8h-18h | Sáb: 8h-12h</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Bless Pack - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5585991303890" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-green-600 transition">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq button').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                if (content.classList.contains('hidden')) {
+                    content.classList.remove('hidden');
+                    icon.classList.add('transform', 'rotate-180');
+                } else {
+                    content.classList.add('hidden');
+                    icon.classList.remove('transform', 'rotate-180');
+                }
+            });
+        });
+        
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.querySelector('.md\\:hidden');
+        const mobileMenu = document.querySelector('nav');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+            mobileMenu.classList.toggle('flex-col');
+            mobileMenu.classList.toggle('absolute');
+            mobileMenu.classList.toggle('top-16');
+            mobileMenu.classList.toggle('left-0');
+            mobileMenu.classList.toggle('right-0');
+            mobileMenu.classList.toggle('bg-white');
+            mobileMenu.classList.toggle('p-4');
+            mobileMenu.classList.toggle('shadow-md');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
